@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminUsersController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+//My custom routes
+Route::resource('admin/users', AdminUsersController::class);
+
+Route::get('/admin', function() {
+    return view('admin.index');
+});

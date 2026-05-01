@@ -1,3 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+
+/* My custom css */
+@import './customcss/libs/bootstrap.css';
+@import './customcss/libs/font-awesome.css';
+@import './customcss/libs/metisMenu.css';
+@import './customcss/libs/sb-admin-2.css';
+@import './customcss/libs/styles.css';
+@import './customcss/libs/blog-post.css';
+
+
+/* @tailwind components;
+@tailwind utilities; */
+
+#admin-page {
+    padding-top: 0px;
+}
